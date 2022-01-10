@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_96ce7ee0453341c0bb7d2e07dc066a76 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_96ce7ee0453341c0bb7d2e07dc066a76" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_96ce7ee0453341c0bb7d2e07dc066a76 = L.map(
+        'map_96ce7ee0453341c0bb7d2e07dc066a76', {
+        center: [0, 0],
+        zoom: 1,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_c8303f3b1f9041b2810302ac0001936d = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+    
+        var marker_b5063d6d9adc4d4290b9f4a3c75469f0 = L.marker(
+            [1.29027, 103.8198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_7a564aa82208440fac9cc2ef709ee593 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c4df3127762d48259002019aef6ced77 = $(`<div id="html_c4df3127762d48259002019aef6ced77" style="width: 100.0%; height: 100.0%;">Singapore, W=1870000, GDP=97431, Pop= 5703600</div>`)[0];
+                popup_7a564aa82208440fac9cc2ef709ee593.setContent(html_c4df3127762d48259002019aef6ced77);
+            
+
+            marker_b5063d6d9adc4d4290b9f4a3c75469f0.bindPopup(popup_7a564aa82208440fac9cc2ef709ee593)
+            ;
+
+            
+        
+    
+        marker_b5063d6d9adc4d4290b9f4a3c75469f0.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_92e6f7f35e5d4c728a3b5246651a343f = L.marker(
+            [1.29027, 103.8198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_1b18c98db59b4aa8b7d584d816f58f5b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f0b93638c2db4772875f8ddb52890120 = $(`<div id="html_f0b93638c2db4772875f8ddb52890120" style="width: 100.0%; height: 100.0%;">Singapore, Waste/tonnes=1870000, GDP=97431, Pop= 5703600</div>`)[0];
+                popup_1b18c98db59b4aa8b7d584d816f58f5b.setContent(html_f0b93638c2db4772875f8ddb52890120);
+            
+
+            marker_92e6f7f35e5d4c728a3b5246651a343f.bindPopup(popup_1b18c98db59b4aa8b7d584d816f58f5b)
+            ;
+
+            
+        
+    
+        marker_92e6f7f35e5d4c728a3b5246651a343f.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_493f7f6bb8154d1a9d54191848201bd9 = L.marker(
+            [4.5353, 114.7277],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_abc30b693a8c469eb71f9fda4de4f612 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c2ecb82681514c0087d111cd3845ee16 = $(`<div id="html_c2ecb82681514c0087d111cd3845ee16" style="width: 100.0%; height: 100.0%;">Brunei, Waste/tonnes=1870000, GDP=97431, Pop= 5703600</div>`)[0];
+                popup_abc30b693a8c469eb71f9fda4de4f612.setContent(html_c2ecb82681514c0087d111cd3845ee16);
+            
+
+            marker_493f7f6bb8154d1a9d54191848201bd9.bindPopup(popup_abc30b693a8c469eb71f9fda4de4f612)
+            ;
+
+            
+        
+    
+        marker_493f7f6bb8154d1a9d54191848201bd9.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d0d93ec714b040aa970a7495750916d6 = L.marker(
+            [1.29027, 103.8198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_8640fa5cfc48441094f02bfc196ac1f3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4d3da8c6a79d407fb63f8486d2d3b658 = $(`<div id="html_4d3da8c6a79d407fb63f8486d2d3b658" style="width: 100.0%; height: 100.0%;">Singapore, Waste/tonnes=1870000, GDP=97431, Pop= 5703600</div>`)[0];
+                popup_8640fa5cfc48441094f02bfc196ac1f3.setContent(html_4d3da8c6a79d407fb63f8486d2d3b658);
+            
+
+            marker_d0d93ec714b040aa970a7495750916d6.bindPopup(popup_8640fa5cfc48441094f02bfc196ac1f3)
+            ;
+
+            
+        
+    
+        marker_d0d93ec714b040aa970a7495750916d6.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9f9a2d9570fa4ed2aa0a9d553141110a = L.marker(
+            [4.5353, 114.7277],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_591bc0383b78435abc8d6fa645ea8efc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_43a7524913b944aba55494d58a9eacf5 = $(`<div id="html_43a7524913b944aba55494d58a9eacf5" style="width: 100.0%; height: 100.0%;">Brunei, Waste/tonnes=216253, GDP=60865, Pop= 423196</div>`)[0];
+                popup_591bc0383b78435abc8d6fa645ea8efc.setContent(html_43a7524913b944aba55494d58a9eacf5);
+            
+
+            marker_9f9a2d9570fa4ed2aa0a9d553141110a.bindPopup(popup_591bc0383b78435abc8d6fa645ea8efc)
+            ;
+
+            
+        
+    
+        marker_9f9a2d9570fa4ed2aa0a9d553141110a.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6f45280dbea3400198c266707b6efc49 = L.marker(
+            [21.9162, 95.956],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_71c55c04b67349aeb0e3dcf5ba0e77df = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_40a65b380f654add9c871b7b6a794140 = $(`<div id="html_40a65b380f654add9c871b7b6a794140" style="width: 100.0%; height: 100.0%;">Myanmar, Waste/tonnes=4677306, GDP=1093, Pop= 46095464</div>`)[0];
+                popup_71c55c04b67349aeb0e3dcf5ba0e77df.setContent(html_40a65b380f654add9c871b7b6a794140);
+            
+
+            marker_6f45280dbea3400198c266707b6efc49.bindPopup(popup_71c55c04b67349aeb0e3dcf5ba0e77df)
+            ;
+
+            
+        
+    
+        marker_6f45280dbea3400198c266707b6efc49.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1ac5b0957cd54d69930b7cb8016bd3a6 = L.marker(
+            [12.5657, 104.991],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_898cb12a4ba04e979f46f13f05cf180e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_17f44e7e527e430285d7bc926acd16fd = $(`<div id="html_17f44e7e527e430285d7bc926acd16fd" style="width: 100.0%; height: 100.0%;">Cambodia, Waste/tonnes=1089000, GDP=3364, Pop= 15270790</div>`)[0];
+                popup_898cb12a4ba04e979f46f13f05cf180e.setContent(html_17f44e7e527e430285d7bc926acd16fd);
+            
+
+            marker_1ac5b0957cd54d69930b7cb8016bd3a6.bindPopup(popup_898cb12a4ba04e979f46f13f05cf180e)
+            ;
+
+            
+        
+    
+        marker_1ac5b0957cd54d69930b7cb8016bd3a6.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ea5d218f2e6848148456469b6f0fcb1a = L.marker(
+            [8.8742, 125.7275],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_623eab9bdd7f41a2ac29676d42945fff = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c6dafc2f173e46dbbd6c8d84a20f306c = $(`<div id="html_c6dafc2f173e46dbbd6c8d84a20f306c" style="width: 100.0%; height: 100.0%;">Timor-Leste, Waste/tonnes=63875, GDP=3344, Pop= 1268671</div>`)[0];
+                popup_623eab9bdd7f41a2ac29676d42945fff.setContent(html_c6dafc2f173e46dbbd6c8d84a20f306c);
+            
+
+            marker_ea5d218f2e6848148456469b6f0fcb1a.bindPopup(popup_623eab9bdd7f41a2ac29676d42945fff)
+            ;
+
+            
+        
+    
+        marker_ea5d218f2e6848148456469b6f0fcb1a.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b61086b498ac46d6b7d3c29fde8da905 = L.marker(
+            [0.7893, 113.9213],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_6c84231445844907a473f1bcb3c493e8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_02a5e3feda5d425daf798e479daccdf9 = $(`<div id="html_02a5e3feda5d425daf798e479daccdf9" style="width: 100.0%; height: 100.0%;">Indonesia, Waste/tonnes=65200000, GDP=10531, Pop= 261115456</div>`)[0];
+                popup_6c84231445844907a473f1bcb3c493e8.setContent(html_02a5e3feda5d425daf798e479daccdf9);
+            
+
+            marker_b61086b498ac46d6b7d3c29fde8da905.bindPopup(popup_6c84231445844907a473f1bcb3c493e8)
+            ;
+
+            
+        
+    
+        marker_b61086b498ac46d6b7d3c29fde8da905.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e97c6e0a3fb74b6f994312cb476e7f98 = L.marker(
+            [19.8563, 102.4955],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_b1d792a5bbfd40499d0dcf888c56fa43 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a4e0b90163a04f468a9cdd9423f0bfb2 = $(`<div id="html_a4e0b90163a04f468a9cdd9423f0bfb2" style="width: 100.0%; height: 100.0%;">Laos, Waste/tonnes=351900, GDP=6543, Pop= 6663967</div>`)[0];
+                popup_b1d792a5bbfd40499d0dcf888c56fa43.setContent(html_a4e0b90163a04f468a9cdd9423f0bfb2);
+            
+
+            marker_e97c6e0a3fb74b6f994312cb476e7f98.bindPopup(popup_b1d792a5bbfd40499d0dcf888c56fa43)
+            ;
+
+            
+        
+    
+        marker_e97c6e0a3fb74b6f994312cb476e7f98.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f3b0673f634e402a9176347a77dea85a = L.marker(
+            [4.2105, 101.9758],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_23bb47cca0954eaa9ca5c68f379448dc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8ac549db9acf4b77a473076265a28cbd = $(`<div id="html_8ac549db9acf4b77a473076265a28cbd" style="width: 100.0%; height: 100.0%;">Malaysia, Waste/tonnes=12982685, GDP=23906, Pop= 30228016</div>`)[0];
+                popup_23bb47cca0954eaa9ca5c68f379448dc.setContent(html_8ac549db9acf4b77a473076265a28cbd);
+            
+
+            marker_f3b0673f634e402a9176347a77dea85a.bindPopup(popup_23bb47cca0954eaa9ca5c68f379448dc)
+            ;
+
+            
+        
+    
+        marker_f3b0673f634e402a9176347a77dea85a.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_49b657f8ace440c7ab82e2688140dcff = L.marker(
+            [12.8797, 121.774],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_a1a1832b7cf44dbca70aea64ce0ec8cf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d7da74e99b224368a2fc8f93e61744b8 = $(`<div id="html_d7da74e99b224368a2fc8f93e61744b8" style="width: 100.0%; height: 100.0%;">The Philippines, Waste/tonnes=14631922, GDP=7705, Pop= 103320224</div>`)[0];
+                popup_a1a1832b7cf44dbca70aea64ce0ec8cf.setContent(html_d7da74e99b224368a2fc8f93e61744b8);
+            
+
+            marker_49b657f8ace440c7ab82e2688140dcff.bindPopup(popup_a1a1832b7cf44dbca70aea64ce0ec8cf)
+            ;
+
+            
+        
+    
+        marker_49b657f8ace440c7ab82e2688140dcff.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_710c023ca47949cd9642559dfd54cef7 = L.marker(
+            [15.87, 100.9925],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_977a5e10fe7b40b59e13293ec2f21123 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7591227e31344049b8fd9caf254b7565 = $(`<div id="html_7591227e31344049b8fd9caf254b7565" style="width: 100.0%; height: 100.0%;">Thailand, Waste/tonnes=26853366, GDP=16301	, Pop= 168657600</div>`)[0];
+                popup_977a5e10fe7b40b59e13293ec2f21123.setContent(html_7591227e31344049b8fd9caf254b7565);
+            
+
+            marker_710c023ca47949cd9642559dfd54cef7.bindPopup(popup_977a5e10fe7b40b59e13293ec2f21123)
+            ;
+
+            
+        
+    
+        marker_710c023ca47949cd9642559dfd54cef7.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7454db413bb14296828a2f546d831685 = L.marker(
+            [14.0583, 108.2772],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_2d0f47e380134d3aa5c644632c120c73 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5597ba5c41a4488aa9a3f59981f292f3 = $(`<div id="html_5597ba5c41a4488aa9a3f59981f292f3" style="width: 100.0%; height: 100.0%;">Vietnam, Waste/tonnes=9570300, GDP=5089	, Pop= 46095464</div>`)[0];
+                popup_2d0f47e380134d3aa5c644632c120c73.setContent(html_5597ba5c41a4488aa9a3f59981f292f3);
+            
+
+            marker_7454db413bb14296828a2f546d831685.bindPopup(popup_2d0f47e380134d3aa5c644632c120c73)
+            ;
+
+            
+        
+    
+        marker_7454db413bb14296828a2f546d831685.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8e3b94489d3e455980085634cde53f35 = L.marker(
+            [1.29027, 103.8198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_744483a09853407d9926e6357406df02 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_05a0e3c94f524b83bccd931be7654b87 = $(`<div id="html_05a0e3c94f524b83bccd931be7654b87" style="width: 100.0%; height: 100.0%;">Singapore, Waste/tonnes=1870000, GDP=97431, Pop=5703600</div>`)[0];
+                popup_744483a09853407d9926e6357406df02.setContent(html_05a0e3c94f524b83bccd931be7654b87);
+            
+
+            marker_8e3b94489d3e455980085634cde53f35.bindPopup(popup_744483a09853407d9926e6357406df02)
+            ;
+
+            
+        
+    
+        marker_8e3b94489d3e455980085634cde53f35.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8dff5a41f2624e46989a4b43f34e9148 = L.marker(
+            [4.5353, 114.7277],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_a9015e1332214458bd95c96f9bf08279 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f39f84e33f2848ffa5d177768e0d5e15 = $(`<div id="html_f39f84e33f2848ffa5d177768e0d5e15" style="width: 100.0%; height: 100.0%;">Brunei, Waste/tonnes=216253, GDP=60865, Pop=423196</div>`)[0];
+                popup_a9015e1332214458bd95c96f9bf08279.setContent(html_f39f84e33f2848ffa5d177768e0d5e15);
+            
+
+            marker_8dff5a41f2624e46989a4b43f34e9148.bindPopup(popup_a9015e1332214458bd95c96f9bf08279)
+            ;
+
+            
+        
+    
+        marker_8dff5a41f2624e46989a4b43f34e9148.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_253bb70102ec4f418b61ca574b92da26 = L.marker(
+            [21.9162, 95.956],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_7a44e7bf5904455e9e29628b3ffc77d1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8406a74740ba48d98cff849cef9e637b = $(`<div id="html_8406a74740ba48d98cff849cef9e637b" style="width: 100.0%; height: 100.0%;">Myanmar, Waste/tonnes=4677306, GDP=1093, Pop=46095464</div>`)[0];
+                popup_7a44e7bf5904455e9e29628b3ffc77d1.setContent(html_8406a74740ba48d98cff849cef9e637b);
+            
+
+            marker_253bb70102ec4f418b61ca574b92da26.bindPopup(popup_7a44e7bf5904455e9e29628b3ffc77d1)
+            ;
+
+            
+        
+    
+        marker_253bb70102ec4f418b61ca574b92da26.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5ee047725b964f468c01fa310029a99f = L.marker(
+            [12.5657, 104.991],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_b2fdd9bcd05340b58397f7226941b93b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7354343aeccd4dbc828028b71f617737 = $(`<div id="html_7354343aeccd4dbc828028b71f617737" style="width: 100.0%; height: 100.0%;">Cambodia, Waste/tonnes=1089000, GDP=3364, Pop=15270790</div>`)[0];
+                popup_b2fdd9bcd05340b58397f7226941b93b.setContent(html_7354343aeccd4dbc828028b71f617737);
+            
+
+            marker_5ee047725b964f468c01fa310029a99f.bindPopup(popup_b2fdd9bcd05340b58397f7226941b93b)
+            ;
+
+            
+        
+    
+        marker_5ee047725b964f468c01fa310029a99f.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4f65b55155e2472daaea164b3374ce1d = L.marker(
+            [8.8742, 125.7275],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_dd64eda536f7432bbecfae199208e081 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a71bc9e6fe084e01b0baae1b0ad0cff6 = $(`<div id="html_a71bc9e6fe084e01b0baae1b0ad0cff6" style="width: 100.0%; height: 100.0%;">Timor-Leste, Waste/tonnes=63875, GDP=3344, Pop=1268671</div>`)[0];
+                popup_dd64eda536f7432bbecfae199208e081.setContent(html_a71bc9e6fe084e01b0baae1b0ad0cff6);
+            
+
+            marker_4f65b55155e2472daaea164b3374ce1d.bindPopup(popup_dd64eda536f7432bbecfae199208e081)
+            ;
+
+            
+        
+    
+        marker_4f65b55155e2472daaea164b3374ce1d.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a9ecd5b4074446daad4e6a6f7adee4e3 = L.marker(
+            [0.7893, 113.9213],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_06c64048da28420a9a9c922ccd7d617e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d02045b39d944af485a7f76cc6516c14 = $(`<div id="html_d02045b39d944af485a7f76cc6516c14" style="width: 100.0%; height: 100.0%;">Indonesia, Waste/tonnes=65200000, GDP=10531, Pop=261115456</div>`)[0];
+                popup_06c64048da28420a9a9c922ccd7d617e.setContent(html_d02045b39d944af485a7f76cc6516c14);
+            
+
+            marker_a9ecd5b4074446daad4e6a6f7adee4e3.bindPopup(popup_06c64048da28420a9a9c922ccd7d617e)
+            ;
+
+            
+        
+    
+        marker_a9ecd5b4074446daad4e6a6f7adee4e3.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f237bf7bde5e462a954d08d284ab3d07 = L.marker(
+            [19.8563, 102.4955],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_740c58c3fffb4867b90c82aa2c9892a4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b2ca43e9e6d24186bc2b5650d340e379 = $(`<div id="html_b2ca43e9e6d24186bc2b5650d340e379" style="width: 100.0%; height: 100.0%;">Laos, Waste/tonnes=351900, GDP=6543, Pop=6663967</div>`)[0];
+                popup_740c58c3fffb4867b90c82aa2c9892a4.setContent(html_b2ca43e9e6d24186bc2b5650d340e379);
+            
+
+            marker_f237bf7bde5e462a954d08d284ab3d07.bindPopup(popup_740c58c3fffb4867b90c82aa2c9892a4)
+            ;
+
+            
+        
+    
+        marker_f237bf7bde5e462a954d08d284ab3d07.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0ccbbedf551d47b0945dd2c5ea0b673d = L.marker(
+            [4.2105, 101.9758],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_587d49f0eae24bbaa51413879db7f941 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_01c2740071bc43d58d5bc442d5481ae9 = $(`<div id="html_01c2740071bc43d58d5bc442d5481ae9" style="width: 100.0%; height: 100.0%;">Malaysia, Waste/tonnes=12982685, GDP=23906, Pop=30228016</div>`)[0];
+                popup_587d49f0eae24bbaa51413879db7f941.setContent(html_01c2740071bc43d58d5bc442d5481ae9);
+            
+
+            marker_0ccbbedf551d47b0945dd2c5ea0b673d.bindPopup(popup_587d49f0eae24bbaa51413879db7f941)
+            ;
+
+            
+        
+    
+        marker_0ccbbedf551d47b0945dd2c5ea0b673d.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_274cb09f8e1f4cc4b283eadaf913e57f = L.marker(
+            [12.8797, 121.774],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_e277582d099b4c6c951a011ab78ecf82 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_326bd87d24534c018d19f1aee3db6226 = $(`<div id="html_326bd87d24534c018d19f1aee3db6226" style="width: 100.0%; height: 100.0%;">The Philippines, Waste/tonnes=14631922, GDP=7705, Pop=103320224</div>`)[0];
+                popup_e277582d099b4c6c951a011ab78ecf82.setContent(html_326bd87d24534c018d19f1aee3db6226);
+            
+
+            marker_274cb09f8e1f4cc4b283eadaf913e57f.bindPopup(popup_e277582d099b4c6c951a011ab78ecf82)
+            ;
+
+            
+        
+    
+        marker_274cb09f8e1f4cc4b283eadaf913e57f.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f610788bf06a4bbebbae99762d8be174 = L.marker(
+            [15.87, 100.9925],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_f9d7ea89a02b4114a57b70435f7b7de5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ba36a87be0014db4851fd5123f7044e4 = $(`<div id="html_ba36a87be0014db4851fd5123f7044e4" style="width: 100.0%; height: 100.0%;">Thailand, Waste/tonnes=26853366, GDP=16301	, Pop=168657600</div>`)[0];
+                popup_f9d7ea89a02b4114a57b70435f7b7de5.setContent(html_ba36a87be0014db4851fd5123f7044e4);
+            
+
+            marker_f610788bf06a4bbebbae99762d8be174.bindPopup(popup_f9d7ea89a02b4114a57b70435f7b7de5)
+            ;
+
+            
+        
+    
+        marker_f610788bf06a4bbebbae99762d8be174.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d2be13e7be7c4bc1b5e953170f8d363f = L.marker(
+            [14.0583, 108.2772],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_0348ee8f703946dc9d0d1131c7decdf2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f5b201d37c174ddfaef566dfeb70f0c4 = $(`<div id="html_f5b201d37c174ddfaef566dfeb70f0c4" style="width: 100.0%; height: 100.0%;">Vietnam, Waste/tonnes=9570300, GDP=5089	, Pop=46095464</div>`)[0];
+                popup_0348ee8f703946dc9d0d1131c7decdf2.setContent(html_f5b201d37c174ddfaef566dfeb70f0c4);
+            
+
+            marker_d2be13e7be7c4bc1b5e953170f8d363f.bindPopup(popup_0348ee8f703946dc9d0d1131c7decdf2)
+            ;
+
+            
+        
+    
+        marker_d2be13e7be7c4bc1b5e953170f8d363f.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7161107aaefb44ae8831ef45d8801892 = L.marker(
+            [1.29027, 103.8198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_ad626d96bd68479eab0ea6edbd8ac762 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aa426b79662749308852ef3f12f3297c = $(`<div id="html_aa426b79662749308852ef3f12f3297c" style="width: 100.0%; height: 100.0%;">Singapore, Waste/tonnes=1870000, GDP=97431, Pop=5703600</div>`)[0];
+                popup_ad626d96bd68479eab0ea6edbd8ac762.setContent(html_aa426b79662749308852ef3f12f3297c);
+            
+
+            marker_7161107aaefb44ae8831ef45d8801892.bindPopup(popup_ad626d96bd68479eab0ea6edbd8ac762)
+            ;
+
+            
+        
+    
+        marker_7161107aaefb44ae8831ef45d8801892.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0ca3ad8612234631baa28cd3bd83368d = L.marker(
+            [4.5353, 114.7277],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_31e9e8c1221843ce957c2464672b0f1e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_81f534e65a9146d08f3e301e319864d3 = $(`<div id="html_81f534e65a9146d08f3e301e319864d3" style="width: 100.0%; height: 100.0%;">Brunei, Waste/tonnes=216253, GDP=60865, Pop=423196</div>`)[0];
+                popup_31e9e8c1221843ce957c2464672b0f1e.setContent(html_81f534e65a9146d08f3e301e319864d3);
+            
+
+            marker_0ca3ad8612234631baa28cd3bd83368d.bindPopup(popup_31e9e8c1221843ce957c2464672b0f1e)
+            ;
+
+            
+        
+    
+        marker_0ca3ad8612234631baa28cd3bd83368d.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8a1c9a7c231847b283de300a86f82e19 = L.marker(
+            [21.9162, 95.956],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_8aab50fd3fcd4237ab45f89943a3d78a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_089ee32160254f919d20f0aa3f2aaecb = $(`<div id="html_089ee32160254f919d20f0aa3f2aaecb" style="width: 100.0%; height: 100.0%;">Myanmar, Waste/tonnes=4677306, GDP=1093, Pop=46095464</div>`)[0];
+                popup_8aab50fd3fcd4237ab45f89943a3d78a.setContent(html_089ee32160254f919d20f0aa3f2aaecb);
+            
+
+            marker_8a1c9a7c231847b283de300a86f82e19.bindPopup(popup_8aab50fd3fcd4237ab45f89943a3d78a)
+            ;
+
+            
+        
+    
+        marker_8a1c9a7c231847b283de300a86f82e19.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_af98f5f0263d42ba82e4dc21bcdb7026 = L.marker(
+            [12.5657, 104.991],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_3eeef6bed63042369b9189822d0c2f6c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_619b5f1ce80d47549dfad8f19bb6ac44 = $(`<div id="html_619b5f1ce80d47549dfad8f19bb6ac44" style="width: 100.0%; height: 100.0%;">Cambodia, Waste/tonnes=1089000, GDP=3364, Pop=15270790</div>`)[0];
+                popup_3eeef6bed63042369b9189822d0c2f6c.setContent(html_619b5f1ce80d47549dfad8f19bb6ac44);
+            
+
+            marker_af98f5f0263d42ba82e4dc21bcdb7026.bindPopup(popup_3eeef6bed63042369b9189822d0c2f6c)
+            ;
+
+            
+        
+    
+        marker_af98f5f0263d42ba82e4dc21bcdb7026.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ca2208a7f9d641ecab999e96506ce101 = L.marker(
+            [8.8742, 125.7275],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_afc7204e8a304ccd98c07edfdcb769d2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c7564ab5e0964946bb23285ca6b70056 = $(`<div id="html_c7564ab5e0964946bb23285ca6b70056" style="width: 100.0%; height: 100.0%;">Timor-Leste, Waste/tonnes=63875, GDP=3344, Pop=1268671</div>`)[0];
+                popup_afc7204e8a304ccd98c07edfdcb769d2.setContent(html_c7564ab5e0964946bb23285ca6b70056);
+            
+
+            marker_ca2208a7f9d641ecab999e96506ce101.bindPopup(popup_afc7204e8a304ccd98c07edfdcb769d2)
+            ;
+
+            
+        
+    
+        marker_ca2208a7f9d641ecab999e96506ce101.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4eb7532d2e5446988a98fe7cf4e88e00 = L.marker(
+            [0.7893, 113.9213],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_a41b31b7fa164b1ea3da5cbe6415b89d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ce0f12648d8b487aa52e37395dd77973 = $(`<div id="html_ce0f12648d8b487aa52e37395dd77973" style="width: 100.0%; height: 100.0%;">Indonesia, Waste/tonnes=65200000, GDP=10531, Pop=261115456</div>`)[0];
+                popup_a41b31b7fa164b1ea3da5cbe6415b89d.setContent(html_ce0f12648d8b487aa52e37395dd77973);
+            
+
+            marker_4eb7532d2e5446988a98fe7cf4e88e00.bindPopup(popup_a41b31b7fa164b1ea3da5cbe6415b89d)
+            ;
+
+            
+        
+    
+        marker_4eb7532d2e5446988a98fe7cf4e88e00.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_93134cfc1dfd4690b344eb9f943da608 = L.marker(
+            [19.8563, 102.4955],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_abc3be1a9fad44e7859f146abab7e224 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5abcc292e64a41418fb1c303d1b11d99 = $(`<div id="html_5abcc292e64a41418fb1c303d1b11d99" style="width: 100.0%; height: 100.0%;">Laos, Waste/tonnes=351900, GDP=6543, Pop=6663967</div>`)[0];
+                popup_abc3be1a9fad44e7859f146abab7e224.setContent(html_5abcc292e64a41418fb1c303d1b11d99);
+            
+
+            marker_93134cfc1dfd4690b344eb9f943da608.bindPopup(popup_abc3be1a9fad44e7859f146abab7e224)
+            ;
+
+            
+        
+    
+        marker_93134cfc1dfd4690b344eb9f943da608.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0b15a05e0caa4a638e4fbda3b8a27bdd = L.marker(
+            [4.2105, 101.9758],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_d5a72f533ac54f4b8bc93cbc0e274858 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e62d2128a10f41eab2eab6dd862e0de4 = $(`<div id="html_e62d2128a10f41eab2eab6dd862e0de4" style="width: 100.0%; height: 100.0%;">Malaysia, Waste/tonnes=12982685, GDP=23906, Pop=30228016</div>`)[0];
+                popup_d5a72f533ac54f4b8bc93cbc0e274858.setContent(html_e62d2128a10f41eab2eab6dd862e0de4);
+            
+
+            marker_0b15a05e0caa4a638e4fbda3b8a27bdd.bindPopup(popup_d5a72f533ac54f4b8bc93cbc0e274858)
+            ;
+
+            
+        
+    
+        marker_0b15a05e0caa4a638e4fbda3b8a27bdd.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8a86d2615d7c48cda8ec828da40893fb = L.marker(
+            [12.8797, 121.774],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_6d287a1b89234d62a57f1f1f3becc17f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7b8bb5f5e99744afb1442e5add375cf3 = $(`<div id="html_7b8bb5f5e99744afb1442e5add375cf3" style="width: 100.0%; height: 100.0%;">The Philippines, Waste/tonnes=14631922, GDP=7705, Pop=103320224</div>`)[0];
+                popup_6d287a1b89234d62a57f1f1f3becc17f.setContent(html_7b8bb5f5e99744afb1442e5add375cf3);
+            
+
+            marker_8a86d2615d7c48cda8ec828da40893fb.bindPopup(popup_6d287a1b89234d62a57f1f1f3becc17f)
+            ;
+
+            
+        
+    
+        marker_8a86d2615d7c48cda8ec828da40893fb.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_475301fe53fa4ad5bfd344f7b231d0db = L.marker(
+            [15.87, 100.9925],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_4edf1f57871846bab5b6470e6e9354b8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d1ad861c684f4cd5a8864ff98f7c1af3 = $(`<div id="html_d1ad861c684f4cd5a8864ff98f7c1af3" style="width: 100.0%; height: 100.0%;">Thailand, Waste/tonnes=26853366, GDP=16301	, Pop=168657600</div>`)[0];
+                popup_4edf1f57871846bab5b6470e6e9354b8.setContent(html_d1ad861c684f4cd5a8864ff98f7c1af3);
+            
+
+            marker_475301fe53fa4ad5bfd344f7b231d0db.bindPopup(popup_4edf1f57871846bab5b6470e6e9354b8)
+            ;
+
+            
+        
+    
+        marker_475301fe53fa4ad5bfd344f7b231d0db.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_33af80c571e04c6cab89d51016317105 = L.marker(
+            [14.0583, 108.2772],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_96ce7ee0453341c0bb7d2e07dc066a76);
+        
+    
+            var popup_df85b20233944376bfa3a065ef33c48b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0276fc2264ef4844b269b13398df4391 = $(`<div id="html_0276fc2264ef4844b269b13398df4391" style="width: 100.0%; height: 100.0%;">Vietnam, Waste/tonnes=9570300, GDP=5089	, Pop=46095464</div>`)[0];
+                popup_df85b20233944376bfa3a065ef33c48b.setContent(html_0276fc2264ef4844b269b13398df4391);
+            
+
+            marker_33af80c571e04c6cab89d51016317105.bindPopup(popup_df85b20233944376bfa3a065ef33c48b)
+            ;
+
+            
+        
+    
+        marker_33af80c571e04c6cab89d51016317105.bindTooltip(
+            `<div>`
+            + `click` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
